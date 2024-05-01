@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # Permite que Eureka lo encuentre
+          lower-case-service-id: true # Permite que el nombre del servicio pueda estar escrito en minusculas y que no de error
+server:
+  port: 8443

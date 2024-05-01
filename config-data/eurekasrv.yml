@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #El false indica que la aplicación no se registra. No será visible para otros servicios
+    fetch-registry: false # No actualizará el registry en búsqueda de servicios, y no veremos que servicios están activos o agregados
+
+
+
